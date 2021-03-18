@@ -1,0 +1,52 @@
+:root {
+  --main-font: "Roboto", sans-serif;
+  --point-font: "Playfair Display", serif;
+  --primary-color: #99c290;
+  --secondary-color: #0b1609;
+  --side-white-space: 5%;
+  --primary-font-color: #000000;
+  --font-size-large: 3rem;
+  --font-weight-bold: 700;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+body {
+  font-family: var(--main-font);
+  color: var(--primary-font-color);
+  background-color: white;
+  height: 100vh;
+  overflow: hidden;
+  letter-spacing: 0.025rem;
+  transition: background-color 1s ease;
+}
+
+.project-container {
+  transform: translateY(0);
+  transition: transform 1s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.project-container .project {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 0 var(--side-white-space);
+}
+.project-container .project .image {
+  position: relative;
+}
+.project-container .project .image img {
+  width: 100%;
+}
+
+@media screen and (min-width: 700px) {
+  :root {
+    --side-white-space: 30%;
+  }
+}/*# sourceMappingURL=style.css.map */
